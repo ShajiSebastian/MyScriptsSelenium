@@ -13,6 +13,7 @@ public class FirefoxScript {
 		System.setProperty("webdriver.firefox.bin","/Applications/Firefox2.app/Contents/MacOS/firefox-bin");// need to say location if we have to invoke a particular one
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http:google.com");
+		System.out.println("Executed in Firefox using gecko driver");
 		driver.quit();
 	}
 }

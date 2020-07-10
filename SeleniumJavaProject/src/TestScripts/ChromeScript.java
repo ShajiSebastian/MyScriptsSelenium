@@ -11,6 +11,7 @@ public class ChromeScript {
 		System.setProperty("webdriver.chrome.driver",projectPath + "/lib/Drivers/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http:google.com");
+		System.out.println("Executed in Chrome browser");
 		driver.quit();
 	}
 }
