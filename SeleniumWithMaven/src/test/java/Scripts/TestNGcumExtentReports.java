@@ -24,7 +24,7 @@ public class TestNGcumExtentReports {
 	@BeforeTest
 	public void setup() {
 
-		extentHtmlRprt = new ExtentHtmlReporter("/Users/a-4600/eclipse-workspace/SeleniumWithMaven/ExtentReportFolder/TestNGextentReport4.html");
+		extentHtmlRprt = new ExtentHtmlReporter("/Users/a-4600/git/MyScriptsSelenium/SeleniumWithMaven/ExtentReportFolder/TestNGextentReport5.html");
 		extent = new ExtentReports();
 		extent.attachReporter(extentHtmlRprt);
 	}

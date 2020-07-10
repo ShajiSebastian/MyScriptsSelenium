@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class TestNG_GoogleSearch {	
+public class PriorityInTestNG {	
 
 	WebDriver driver = null;
 
@@ -21,12 +21,36 @@ public class TestNG_GoogleSearch {
 		driver = new ChromeDriver();
 	}
 
-	@Test
-	public void search() {
-
-		driver.get("http:google.com");
-		System.out.println("Invoked browser in TestNG");
+	@Test(priority = 0)
+    public void method1()    {
+		System.out.println("Method 1");
 	}
+	
+	@Test(priority = -2)
+    public void method2()     {
+		System.out.println("Method 2");
+	}
+	
+	@Test(priority = 2)
+     public void method3()     {
+		System.out.println("Method 3");
+	}
+	
+	@Test(priority = 2)
+     public void method4()     {
+		System.out.println("Method 4");
+	}
+	
+	@Test
+     public void a_method5()     {
+		System.out.println("Method 5");
+	}
+	
+	@Test
+     public void A_method6()     {
+		System.out.println("Method 6");
+	}
+
 
 	@AfterTest
 	public void quit() {
