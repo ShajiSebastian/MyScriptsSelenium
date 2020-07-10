@@ -14,7 +14,8 @@ public class ExtentReports_GoogleSearch {
 
 	public static void main(String[] args) {
 		
-		ExtentHtmlReporter extentHtmlRprt = new ExtentHtmlReporter("/Users/a-4600/eclipse-workspace/SeleniumWithMaven/ExtentReportFolder/extentReport_shaj.html");
+		ExtentHtmlReporter extentHtmlRprt = new ExtentHtmlReporter("/Users/a-4600/git/MyScriptsSelenium/SeleniumWithMaven/ExtentReportFolder/extentReport.html");
+																	
 
 		ExtentReports extent = new ExtentReports();
 		extent.attachReporter(extentHtmlRprt);
@@ -29,6 +30,7 @@ public class ExtentReports_GoogleSearch {
 		driver.get("https://google.com");
 		test.pass("Navigated to google");
 		System.out.println("Executed extent reports google search script");
+		driver.close();
 		extent.flush();
 	}
 
