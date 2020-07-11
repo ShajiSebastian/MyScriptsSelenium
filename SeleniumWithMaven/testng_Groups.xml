@@ -5,11 +5,14 @@
   
   <groups>
   	<run>
-  		<include name = "Smoke"></include> 
+  		<include name = "Smoke"></include>
+  		<include name = "Regression"></include> 
   	</run>
   </groups>
+  
     <classes>
       <class name="Scripts.GroupsTestNG"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+    
+  </test>
+</suite> 
