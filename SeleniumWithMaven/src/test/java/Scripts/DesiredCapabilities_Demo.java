@@ -10,11 +10,15 @@ public class DesiredCapabilities_Demo {
 	
 	public static void main(String[] args) {
 		
-		WebDriverManager.chromedriver().setup(); // we can mention a particular version also
+		WebDriverManager.chromedriver().setup(); 
 		DesiredCapabilities caps =new DesiredCapabilities();
+		caps.setCapability("timezone","UTC+05:30");
+		caps.setCapability("geoLocation","IN");
+		caps.setCapability("chrome.driver","78.0");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http:google.com");
 		System.out.println("Invoked Desired capabilities Demo script");
+		driver.close();
 	}
 
 }
