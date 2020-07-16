@@ -38,7 +38,6 @@ public class TestNGcumExtentReports {
 		
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-
 		driver.get("http:google.com");
 		System.out.println("Invoked browser in TestNG with Extent reports");
 	}
