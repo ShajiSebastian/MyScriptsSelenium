@@ -13,8 +13,6 @@ public class WebDriverManager_GoogleSearch {
 		
 		WebDriverManager.firefoxdriver().setup();
 //		WebDriverManager.chromedriver().setup(); // we can mention a particular version also
-//		String projectPath = System.getProperty("user.dir");
-//		System.setProperty("webdriver.chrome.driver",projectPath + "/lib/Drivers/chromedriver");
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http:google.com");
 		System.out.println("Invoked browser using Webdriver manager and searched google");
