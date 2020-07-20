@@ -20,12 +20,12 @@ public class ExtentReports_GoogleSearch {
 		ExtentReports extent = new ExtentReports();
 		extent.attachReporter(extentHtmlRprt);
 
-		ExtentTest test = extent.createTest("MyFirstTest","Sample test to check extent report");
-		test.pass("details");
+		ExtentTest test = extent.createTest("Invoke Google"," A sample test to check extent report by Shaji");
+		test.pass("Going to start executon");
 		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
-		test.log(Status.INFO,"Starting test case");
+		test.log(Status.INFO,"Invoked browser");
 		
 		driver.get("https://google.com");
 		test.pass("Navigated to google");
